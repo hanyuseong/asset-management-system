@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface SidebarProps {
   open: boolean;
@@ -29,11 +30,11 @@ export default function Sidebar({ open }: SidebarProps) {
       {open && (
         <>
           <div style={{ display: 'flex', alignItems: 'center', height: 64, paddingLeft: 24, borderBottom: '1px solid #2e3b4e' }}>
-            <img src="/logo.png" alt="logo" style={{ width: 36, height: 36, marginRight: 12 }} />
+            <Image src="/logo.png" alt="logo" width={36} height={36} style={{ marginRight: 12 }} />
             <span style={{ fontWeight: 700, fontSize: 22 }}>지어소프트</span>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '24px 0 16px 0', borderBottom: '1px solid #2e3b4e' }}>
-            <img src="/profile.png" alt="profile" style={{ width: 60, height: 60, borderRadius: '50%', marginBottom: 8, background: '#fff' }} />
+            <Image src="/profile.png" alt="profile" width={60} height={60} style={{ borderRadius: '50%', marginBottom: 8, background: '#fff' }} />
             <div style={{ color: '#bfc9d9', fontSize: 15, marginBottom: 2 }}>Welcome,</div>
             <div style={{ color: '#fff', fontWeight: 500, fontSize: 16 }}>한유성</div>
           </div>

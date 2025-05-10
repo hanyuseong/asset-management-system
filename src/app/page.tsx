@@ -34,7 +34,7 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            {assetData.map((row, idx) => (
+            {assetData.map((row) => (
               <tr key={row.id}>
                 <td style={{ border: '1px solid #ddd', padding: 8 }}><input type="checkbox" /></td>
                 <td style={{ border: '1px solid #ddd', padding: 8 }}>{row.id}</td>

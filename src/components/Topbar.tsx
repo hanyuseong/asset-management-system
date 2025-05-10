@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface TopbarProps {
   onToggleSidebar: () => void;
@@ -18,7 +19,7 @@ export default function Topbar({ onToggleSidebar }: TopbarProps) {
         <span style={{ fontSize: 24, fontWeight: 600, color: '#6b7685' }}>자산관리 목록</span>
       </div>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img src="/profile.png" alt="profile" style={{ width: 36, height: 36, borderRadius: '50%', marginRight: 10, background: '#fff' }} />
+        <Image src="/profile.png" alt="profile" width={36} height={36} style={{ borderRadius: '50%', marginRight: 10, background: '#fff' }} />
         <span style={{ color: '#233044', fontWeight: 500, fontSize: 16 }}>한유성</span>
       </div>
     </header>
